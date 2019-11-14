@@ -28,7 +28,7 @@ class ReplayParser(CoreParser):
 
             line_num += 1
 
-            if line.startswith(";"):
+            if line.startswith(";") or len(line) == 0:
                 pass
             else:
                 tokens = line.split()
